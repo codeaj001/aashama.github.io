@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stye.css">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #2e2d2d;
+        }
+
+        header nav {
+            text-align: center;
+            margin: 30px 0px 0px 20px;
+        }
+
+        header nav h2 {
+            color: #ececec;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*****end of header****/
+
+        main .hero {
+            background-color: #363434;
+            margin: 20px;
+            margin-top: 60px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 3px;
+        }
+
+        main .hero img {
+            width: 90%;
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+
+        /*************HERO ENDS************/
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            margin: 20px 0px;
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .heading h2 {
+            font-size: 20px;
+        }
+
+        /***********HEADING ENDS*************/
+
+        .intro {
+            background-color: #363434;
+            margin: 20px;
+            margin-top: 60px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .intro h2 {
+            text-align: left;
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.8em;
+            background-color: #363434;
+            margin-top: 20px;
+        }
+
+        .intro h1 {
+            text-align: left;
+            color: rgb(157, 157, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            background-color: #363434;
+            margin-top: 10px;
+            line-height: 26px;
+            letter-spacing: 2px;
+        }
+        
+        /***************INTRO ENDS*****************/
+
+        .edu {
+            background-color: #363434;
+            margin: 20px;
+            margin-top: 60px;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .edu h3 {
+            color: #6854fe;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #363434;
+            font-size: 20px;
+        }
+        .edu p {
+            margin-top: 30px;
+            color: rgb(157, 157, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #363434;
+            font-size: 20px;
+        }
+
+        .edu h1 {
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #363434;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .edu h4 {
+            color: rgb(157, 157, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #363434;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /**************EDUCATION ENDS***********/
+        .work {
+            background-color: #363434;
+            margin: 20px;
+            margin-top: 5px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .work h2 {
+            text-align: left;
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            background-color: #363434;
+            margin-bottom: 0px;
+            margin-top: 70px;
+        }
+
+        .work h3 {
+            text-align: left;
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            background-color: #363434;
+            margin-bottom: 0px;
+            margin-top: 8px;
+        }
+
+        .work h3 span {
+            text-align: left;
+            color: #6854fe;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            background-color: #363434;
+            margin-bottom: 0px;
+            margin-top: 8px;
+        }
+
+        .work a {
+            background-color: #363434;
+            color: rgb(157, 157, 157);
+            float: right;
+            font-size: 30px;
+            text-decoration: none;
+            margin-top: -20px;
+            transition: .3s;
+        }
+
+        .work a:hover {
+            color: #ececec;
+            transition: .3s;
+        }
+
+        /*****************END OF WORK****************/
+
+        .cred {
+            background-color: #363434;
+            margin: 20px;
+            margin-top: 5px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
+        .cred img {
+            width: 60%;
+            margin-top: -20px;
+            background-color: #363434;
+        }
+
+        .cred h5 {
+            text-align: left;
+            color: rgb(157, 157, 157);
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: -40px;
+            font-size: 13px;
+            background-color: #363434;
+            margin-bottom: 0px;
+        }
+
+        .cred h2 {
+            text-align: left;
+            color: #ececec;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2em;
+            background-color: #363434;
+            margin-top: 4px;
+        }
+
+        .cred a {
+            background-color: #363434;
+            color: rgb(157, 157, 157);
+            float: right;
+            font-size: 30px;
+            text-decoration: none;
+            margin-top: -20px;
+            transition: .3s;
+        }
+
+        .cred a:hover {
+            color: #ececec;
+            transition: .3s;
+        }
+
+        /**************END OF CREDENTIALS**************/
+
+        footer {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        footer h2 {
+            color: #ececec;
+            font-size: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 0px;
+            margin-top: 20px;
+            padding: 20px 0px;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 5px;
+            text-transform: uppercase;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: rgb(157, 157, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        footer ul li a:hover {
+            border-bottom: 5px solid lightgray;
+        }
+
+        footer p {
+            color: rgb(157, 157, 157);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 40px 0px;
+        }
+
+        footer p span a {
+            color: #6854fe;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 40px 0px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /*************END OF FOOTER****************/
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>About Me</h2>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="/images/profile-image.jpg" alt="">
+        </div>
+
+        <div class="heading">
+            <img src="/images/star.png"><h2>self-summary</h2><img src="/images/star.png">
+        </div>
+
+        <div class="intro">
+            <h2>A. A. Shama</h2>
+            <h1>I am Nigeria-based product designer with a focus on web design and its development. I did not have a lot of experience but I am willing to do it all in, and I will be as reliable as possible.</h1>
+        </div>
+
+        <div class="edu">
+            <h3>education</h3>
+
+            <p class="date">2016 - 2021</p>
+            <h1>High School Certificate</h1>
+            <h4>Al-Iman School, Lafia</h4>
+
+            <p class="date">2023 - Present</p>
+            <h1>Bachelor Degree in Computer Science</h1>
+            <h4>Federal University, Lafia</h4>
+        </div>
+
+        <div class="edu">
+            <h3>Skills</h3>
+
+            <p>85%</p>
+            <h1>HTML/CSS</h1>
+            <h4>Present</h4>
+
+            <p>40%</p>
+            <h1>Javascript</h1>
+            <h4>Present</h4>
+
+            <p>60%</p>
+            <h1>Figma</h1>
+            <h4>Present</h4>
+
+            <p>75%</p>
+            <h1>Wordpress</h1>
+            <h4>Present</h4>
+
+            <p>80%</p>
+            <h1>Adobe XD</h1>
+            <h4>Present</h4>
+        </div>
+
+        <div class="work">
+            <h2>Let's</h2>
+            <h3>work <span>together.</span></h3>
+            <a href="">&#128279</a>
+        </div>  
+            
+        <div class="cred">
+            <img src="/images/signature.png" alt="">
+            <h5>more about me</h5>
+            <h2>Credentials</h2>
+            <a href="/subfiles/credentials.html">&#128279</a>
+        </div>
+    </main>
+
+    <footer>
+        <h2>CodeAJ</h2>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/subfiles/me.html">About</a></li>
+            <li><a href="/subfiles/projects.html">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; All rights reserved by <span><a href="https://github.com/codeaj001">Code AJ</a></span></p>
+    </footer>
+</body>
+</html>
